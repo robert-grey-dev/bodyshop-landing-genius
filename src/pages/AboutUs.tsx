@@ -41,7 +41,7 @@ const AboutUs = () => {
           
           <div className="mb-12">
             <img 
-              src="/lovable-uploads/283e15c4-17ac-4755-b67d-7b82560fc96b.png"
+              src="/bodyshop-uploads/283e15c4-17ac-4755-b67d-7b82560fc96b.png"
               alt="About Us Hero" 
               className="w-full h-[400px] object-cover rounded-lg mb-8"
             />

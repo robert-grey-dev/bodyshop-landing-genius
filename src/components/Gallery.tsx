@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 
 const galleryItems = [
   {
-    image: "/lovable-uploads/abf4d1fe-6fcc-422c-8632-7c63b9f467d9.png",
+    image: "/bodyshop-uploads/abf4d1fe-6fcc-422c-8632-7c63b9f467d9.png",
     title: "Body Repair",
     description: "Professional collision damage restoration",
   },
   {
-    image: "/lovable-uploads/415d24ae-77dd-4960-829d-079db2fd8aad.png",
+    image: "/bodyshop-uploads/415d24ae-77dd-4960-829d-079db2fd8aad.png",
     title: "Paint Services",
     description: "Complete car repainting with premium finish",
   },

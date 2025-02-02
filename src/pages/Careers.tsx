@@ -71,7 +71,7 @@ const Careers = () => {
           
           <div className="mb-12">
             <img 
-              src="/lovable-uploads/f7b7316d-6fc5-4136-936e-1cd15cd20ed7.png"
+              src="/bodyshop-uploads/f7b7316d-6fc5-4136-936e-1cd15cd20ed7.png"
               alt="Careers Hero" 
               className="w-full h-auto object-contain rounded-lg mb-8"
             />

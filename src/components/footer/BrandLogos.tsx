@@ -6,32 +6,32 @@ interface BrandLogo {
 
 const brandLogos: BrandLogo[] = [
   { 
-    src: "/lovable-uploads/f68b6cb0-47ce-467d-b1a8-e55fc8e8bca5.png", 
+    src: "/bodyshop-uploads/f68b6cb0-47ce-467d-b1a8-e55fc8e8bca5.png", 
     alt: "Abra",
     width: 120 
   },
   { 
-    src: "/lovable-uploads/c3d7579b-718a-41dc-acec-ab00495d2905.png", 
+    src: "/bodyshop-uploads/c3d7579b-718a-41dc-acec-ab00495d2905.png", 
     alt: "Carstar",
     width: 140 
   },
   { 
-    src: "/lovable-uploads/f478cda0-fe40-4b85-9e55-e96e84a50a1d.png", 
+    src: "/bodyshop-uploads/f478cda0-fe40-4b85-9e55-e96e84a50a1d.png", 
     alt: "Driven Brands",
     width: 160 
   },
   { 
-    src: "/lovable-uploads/752f83bc-c153-4148-9f81-ab5c711c7950.png", 
+    src: "/bodyshop-uploads/752f83bc-c153-4148-9f81-ab5c711c7950.png", 
     alt: "Take 5",
     width: 120 
   },
   { 
-    src: "/lovable-uploads/8dec828e-53f1-4bc1-8d48-43c75a658c16.png", 
+    src: "/bodyshop-uploads/8dec828e-53f1-4bc1-8d48-43c75a658c16.png", 
     alt: "Meineke",
     width: 130 
   },
   { 
-    src: "/lovable-uploads/e8b2b9cd-4bf8-41cb-8612-0a3f5c79bfc2.png", 
+    src: "/bodyshop-uploads/e8b2b9cd-4bf8-41cb-8612-0a3f5c79bfc2.png", 
     alt: "Maaco",
     width: 130 
   }

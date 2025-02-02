@@ -28,7 +28,7 @@ const Press = () => {
           
           <div className="mb-12">
             <img 
-              src="/lovable-uploads/5ef31e96-7393-408d-8528-7b6cd6d889d4.png"
+              src="/bodyshop-uploads/5ef31e96-7393-408d-8528-7b6cd6d889d4.png"
               alt="Leading Media and News Outlets" 
               className="w-full h-auto object-contain rounded-lg mb-8"
             />
