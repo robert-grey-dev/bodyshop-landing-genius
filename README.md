@@ -2,6 +2,10 @@
 
 ![Preview](public/og-image.png)
 
+## 🌐 Live Demo  
+👉 [Click here to view the live demo](https://bodyshop-landing-genius-vgyx.vercel.app/)
+
+
 ## License
 
 This project is protected under a proprietary license. Unauthorized commercial or non-commercial use is strictly prohibited. For licensing inquiries, please contact:
