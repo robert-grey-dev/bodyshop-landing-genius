@@ -8,7 +8,6 @@ const Navbar = () => {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
 
-  // Close mobile menu when route changes
   useEffect(() => {
     setIsOpen(false);
   }, [location.pathname]);
@@ -69,14 +68,17 @@ const Navbar = () => {
                 <span className="sr-only">Toggle Menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px] p-0">
-              <nav className="flex flex-col h-full p-6">
-                <div className="flex flex-col space-y-2">
+            <SheetContent 
+              side="right" 
+              className="w-full p-0 h-auto max-h-fit border-b"
+            >
+              <nav className="flex flex-col">
+                <div className="flex flex-col">
                   {navItems.map((item) => (
                     <Button
                       key={item.path}
                       variant={isActive(item.path) ? "default" : "ghost"}
-                      className={`w-full justify-start ${
+                      className={`w-full justify-start rounded-none ${
                         isActive(item.path)
                           ? "bg-[#1A1F2C] text-white"
                           : "text-gray-600 hover:text-[#1A1F2C]"
@@ -89,7 +91,7 @@ const Navbar = () => {
                           handleNavClick();
                           setIsOpen(false);
                         }}
-                        className="flex items-center gap-2"
+                        className="flex items-center gap-2 px-6 py-4"
                       >
                         {item.icon}
                         {item.label}
