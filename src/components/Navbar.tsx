@@ -1,9 +1,17 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "./ui/button";
-import { Home, Users, Briefcase, Newspaper, HelpCircle } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Menu, Home, Users, Briefcase, Newspaper, HelpCircle } from "lucide-react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname]);
 
   const isActive = (path: string) => {
     return location.pathname === path;
@@ -31,6 +39,8 @@ const Navbar = () => {
           <Link to="/" className="text-2xl font-bold text-[#1A1F2C]" onClick={handleNavClick}>
             Bodyshop
           </Link>
+
+          {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-2">
             {navItems.map((item) => (
               <Button
@@ -50,6 +60,46 @@ const Navbar = () => {
               </Button>
             ))}
           </div>
+
+          {/* Mobile Navigation */}
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
+            <SheetTrigger asChild className="md:hidden">
+              <Button variant="ghost" size="icon" className="relative">
+                <Menu className="h-5 w-5" />
+                <span className="sr-only">Toggle Menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[300px] sm:w-[400px] p-0">
+              <nav className="flex flex-col h-full p-6">
+                <div className="flex flex-col space-y-2">
+                  {navItems.map((item) => (
+                    <Button
+                      key={item.path}
+                      variant={isActive(item.path) ? "default" : "ghost"}
+                      className={`w-full justify-start ${
+                        isActive(item.path)
+                          ? "bg-[#1A1F2C] text-white"
+                          : "text-gray-600 hover:text-[#1A1F2C]"
+                      }`}
+                      asChild
+                    >
+                      <Link 
+                        to={item.path} 
+                        onClick={() => {
+                          handleNavClick();
+                          setIsOpen(false);
+                        }}
+                        className="flex items-center gap-2"
+                      >
+                        {item.icon}
+                        {item.label}
+                      </Link>
+                    </Button>
+                  ))}
+                </div>
+              </nav>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </nav>
